@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        @media (max-width: 576px) {
+          
+            .img-reducedee {
+                display: flex;
+                position: relative;
+                height: 200px;
+                width: 200px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .img-reducedee {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .resized-img {
+                height: 90px;
+                width: 100px;
+            }
+        
+            .resized-imgs {
+                height: 140px;
+                width: 100px;
+            }
+        }
+        
+        .nav-item {
+            padding: 0px 80px;
+        }
+        
+        .navbar {
+            background-color: rgb(223, 112, 14);
+        }
+        
+        .main {
+            background: linear-gradient(yellow, rgb(191, 3, 197));
+        }
+        
+        .img-reducedee {
+            width: 100%; 
+            max-width: 720px;
+            height: auto; 
+            margin-bottom: 30px;
+        }
+        
+        .buttons {
+            background-color:  rgb(223, 112, 14);
+            text-align: center;
+            align-items: center;
+            position: relative;
+            width: 100px;
+            border-radius: 2px;
+        }
+        
+        .resized-img {
+            display: flex;
+            position: relative;
+            height: 180px;
+            width: 200px;
+        }
+        
+        .resized-imgs {
+            display: flex;
+            position: relative;
+            height: 280px;
+            width: 200px;
+        }
+        
+        .boxee {
+            background-color:  rgb(223, 112, 14);
+            box-sizing: border-box;
+            border-radius: 2px;
+            padding: 12px;
+        }
+        .menubar{
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="menu-bar.png" class="menubar">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col p-5">
+                    <h1 class="p-3">LOREM IPSUM</h1>
+                    <p class="p-5"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit alias maiores magni debitis aspernatur ullam aliquam minima asperiores placeat distinctio quisquam ut, odio illo consequuntur voluptatem expedita, assumenda fugit cupiditate.</p>
+                    <button class="text-center align-items-center buttons">click me</button>
+                </div>
+                
+                <div class="col">
+                    <img src="pexels-robin-stickel-70497.jpg" alt="Image" class="img-reducedee ">
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col sized">
+                                        <img src="pexels-rachel-claire-6752433.jpg" class="resized-img mb-2 img-fluid" />
+                                        <div class="col">
+                                            <img src="pexels-eva-bronzini-6141651.jpg" class="resized-img img-fluid" />
+                                        </div>
+                                    </div>
+                                    <div class="col sized">
+                                        <img src="pexels-mister-mister-3434523.jpg" class="resized-imgs img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="boxee">
+                                <p>LOREM IPSUM</p>
+                                <p><h1>LOREM IPSUM <br>SET ADEMIR</h1></p>
+                                <img src="icons8-arrow-30.png" class="menus" ><span class="menu-text">click</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
